@@ -111,7 +111,7 @@ hr { color: inherit; }
 .cabecalho {
   position: fixed; inset: 0 0 auto 0; z-index: 100;
   padding-block: var(--space-5); color: var(--marfim);
-  transition: background-color .45s var(--ease), padding .45s var(--ease), box-shadow .45s var(--ease), color .45s var(--ease);
+  transition: background-color .45s var(--ease), color .45s var(--ease);
 }
 .cabecalho[data-rolado], .cabecalho--solido {
   background: rgba(246, 241, 232, .86); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
@@ -302,7 +302,7 @@ hr { color: inherit; }
 .servicos { display: grid; gap: var(--space-5); margin-top: var(--space-7); }
 .servico {
   position: relative; background: var(--marfim); border: 1px solid var(--stone);
-  transition: transform .35s var(--ease), border-color .35s var(--ease), box-shadow .35s var(--ease);
+  transition: transform .35s var(--ease), border-color .35s var(--ease);
 }
 .servico__entra { display: grid; grid-template-rows: auto auto auto 1fr; height: 100%; padding: var(--space-5); }
 .servico__etiqueta {
@@ -482,3 +482,9 @@ hr { color: inherit; }
   .rodape__nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); justify-items: center; }
 }
 @media (max-width: 399px) { .convite { padding: var(--space-5) var(--space-4); } }
+
+
+/* Regra do Armin, 19/10/2026 (§0 "Rolagem leve no celular"): sem vidro desfocado no celular; fundo quase opaco. Aplicado por aplicar-carregamento.mjs. */
+@media (max-width: 899px) {
+  .cabecalho[data-rolado], .cabecalho--solido { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(246, 241, 232, 0.96); }
+}

@@ -21,11 +21,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" media="(max-width: 899px)" imagesrcset="assets/img/heroi-mobile-480.webp 480w, assets/img/heroi-mobile-960.webp 960w" imagesizes="100vw">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/style.css">
-
-<link rel="preload" as="image" href="assets/img/heroi-mobile.webp" media="(max-width: 899px)" type="image/webp">
-<link rel="preload" as="image" href="assets/img/heroi-desktop.webp" media="(min-width: 900px)" type="image/webp">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,11 +87,10 @@
   <section class="heroi escuro" id="inicio" data-heroi>
     <div class="heroi__fundo">
       <picture>
-        <source media="(min-width: 900px)" srcset="assets/img/heroi-desktop.webp" type="image/webp">
-        <source media="(min-width: 900px)" srcset="assets/img/heroi-desktop.jpg">
-        <source srcset="assets/img/heroi-mobile.webp" type="image/webp">
-        <img src="assets/img/heroi-mobile.jpg" width="1200" height="1500" alt="" fetchpriority="high">
-      </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/heroi-mobile-480.webp 480w, assets/img/heroi-mobile-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/heroi-mobile-960.webp 960w" sizes="100vw">
+  <img src="assets/img/heroi-mobile-960.jpg" width="1200" height="1500" alt="" decoding="async" fetchpriority="high">
+</picture>
     </div>
     <div class="heroi__veu"></div>
     <div class="container heroi__conteudo">
@@ -181,9 +178,10 @@
       <div class="sobre__foto r">
         <div class="midia">
           <picture>
-            <source srcset="assets/img/sobre-vitor.webp" type="image/webp">
-            <img src="assets/img/sobre-vitor.jpg" width="1200" height="1500" loading="lazy" alt="Vitor Szpoganicz sorrindo, sentado à mesa do consultório, com a janela e os prédios do Centro ao fundo">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/sobre-vitor-480.webp 480w, assets/img/sobre-vitor-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/sobre-vitor-960.webp 960w" sizes="50vw">
+  <img src="assets/img/sobre-vitor-960.jpg" width="1200" height="1500" alt="Vitor Szpoganicz sorrindo, sentado à mesa do consultório, com a janela e os prédios do Centro ao fundo" decoding="async">
+</picture>
         </div>
       </div>
       <div class="sobre__texto r">
@@ -203,11 +201,10 @@
   <section class="frase escuro" aria-label="O caminho para a longevidade">
     <div class="frase__fundo">
       <picture>
-        <source media="(min-width: 900px)" srcset="assets/img/frase-cozinha.webp" type="image/webp">
-        <source media="(min-width: 900px)" srcset="assets/img/frase-cozinha.jpg">
-        <source srcset="assets/img/frase-cozinha-mobile.webp" type="image/webp">
-        <img src="assets/img/frase-cozinha-mobile.jpg" width="1200" height="1500" loading="lazy" alt="">
-      </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/frase-cozinha-mobile-480.webp 480w, assets/img/frase-cozinha-mobile-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/frase-cozinha-mobile-960.webp 960w" sizes="50vw">
+  <img src="assets/img/frase-cozinha-mobile-960.jpg" width="1200" height="1500" alt="" decoding="async">
+</picture>
     </div>
     <div class="frase__veu"></div>
     <div class="container frase__texto">
@@ -227,9 +224,10 @@
         <div class="acompanhamento__midia r">
           <div class="midia">
             <picture>
-              <source srcset="assets/img/online-ingredientes.webp" type="image/webp">
-              <img src="assets/img/online-ingredientes.jpg" width="1200" height="900" loading="lazy" alt="Caixote de feira com ovos, batata-doce, tomates, couve e beterraba">
-            </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/online-ingredientes-480.webp 480w, assets/img/online-ingredientes-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/online-ingredientes-960.webp 960w" sizes="50vw">
+  <img src="assets/img/online-ingredientes-960.jpg" width="1200" height="900" alt="Caixote de feira com ovos, batata-doce, tomates, couve e beterraba" decoding="async" loading="lazy">
+</picture>
           </div>
         </div>
       </div>
@@ -272,9 +270,10 @@
         </div>
         <div class="midia">
           <picture>
-            <source srcset="assets/img/acompanhamento-exames.webp" type="image/webp">
-            <img src="assets/img/acompanhamento-exames.jpg" width="1200" height="900" loading="lazy" alt="Folhas de exame, caderno aberto e uma xícara de café sobre a mesa">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/acompanhamento-exames-480.webp 480w, assets/img/acompanhamento-exames-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/acompanhamento-exames-960.webp 960w" sizes="50vw">
+  <img src="assets/img/acompanhamento-exames-960.jpg" width="1200" height="900" alt="Folhas de exame, caderno aberto e uma xícara de café sobre a mesa" decoding="async" loading="lazy">
+</picture>
         </div>
       </div>
     </div>
@@ -316,9 +315,10 @@
       <div class="convite r">
         <div class="midia">
           <picture>
-            <source srcset="assets/img/convite-recepcao.webp" type="image/webp">
-            <img src="assets/img/convite-recepcao.jpg" width="1160" height="1450" loading="lazy" alt="Vitor Szpoganicz na sala de espera do consultório, com uma xícara de café">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/convite-recepcao-480.webp 480w, assets/img/convite-recepcao-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/convite-recepcao-960.webp 960w" sizes="50vw">
+  <img src="assets/img/convite-recepcao-960.jpg" width="1160" height="1450" alt="Vitor Szpoganicz na sala de espera do consultório, com uma xícara de café" decoding="async" loading="lazy">
+</picture>
         </div>
         <div class="convite__texto">
           <p class="rotulo">Primeiro contato</p>
@@ -367,9 +367,10 @@
       <aside class="contato r" aria-labelledby="contato-titulo">
         <div class="midia">
           <picture>
-            <source srcset="assets/img/contato-preparo.webp" type="image/webp">
-            <img src="assets/img/contato-preparo.jpg" width="1200" height="900" loading="lazy" alt="Mãos fatiando uma abobrinha numa tábua de madeira, vista de cima">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/contato-preparo-480.webp 480w, assets/img/contato-preparo-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/contato-preparo-960.webp 960w" sizes="50vw">
+  <img src="assets/img/contato-preparo-960.jpg" width="1200" height="900" alt="Mãos fatiando uma abobrinha numa tábua de madeira, vista de cima" decoding="async" loading="lazy">
+</picture>
         </div>
         <div class="contato__texto">
           <p class="rotulo">Contato</p>
